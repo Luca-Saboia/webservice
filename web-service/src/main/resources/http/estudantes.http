@@ -1,0 +1,28 @@
+### LISTAR ESTUDANTES
+GET http://localhost:8080/estudantes
+
+### CRIAR ESTUDANTE
+POST http://localhost:8080/estudantes
+Content-Type: application/json
+
+{
+  "id": 11,
+  "nome": "Novo Estudante",
+  "email": "novo@email.com",
+  "nascimento": "2000-01-01",
+  "anoIngresso": 2022
+}
+
+### ATUALIZAR ESTUDANTE
+PUT http://localhost:8080/estudantes/1
+Content-Type: application/json
+
+{
+  "nome": "Estudante Atualizado",
+  "email": "update@email.com",
+  "nascimento": "2000-01-01",
+  "anoIngresso": 2022
+}
+
+### DELETAR ESTUDANTE
+DELETE http://localhost:8080/estudantes/1

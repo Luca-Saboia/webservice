@@ -1,0 +1,29 @@
+### LISTAR EMPRESAS
+GET http://localhost:8080/empresas
+
+### BUSCAR EMPRESA POR ID (se implementar depois)
+GET http://localhost:8080/empresas/1
+
+### CRIAR EMPRESA
+POST http://localhost:8080/empresas
+Content-Type: application/json
+
+{
+  "id": 10,
+  "nome": "Nova Empresa",
+  "cnpj": "00.000.000/0001-00",
+  "emailContato": "contato@nova.com"
+}
+
+### ATUALIZAR EMPRESA
+PUT http://localhost:8080/empresas/1
+Content-Type: application/json
+
+{
+  "nome": "Empresa Atualizada",
+  "cnpj": "11.111.111/0001-11",
+  "emailContato": "novo@email.com"
+}
+
+### DELETAR EMPRESA
+DELETE http://localhost:8080/empresas/1

@@ -1,0 +1,31 @@
+### LISTAR VAGAS
+GET http://localhost:8080/vagas
+
+### CRIAR VAGA
+POST http://localhost:8080/vagas
+Content-Type: application/json
+
+{
+  "id": 20,
+  "titulo": "Nova Vaga",
+  "descricao": "Descrição da vaga",
+  "publicacao": "2025-12-01",
+  "ativo": true,
+  "idEmpresa": 1
+}
+
+### ATUALIZAR VAGA
+PUT http://localhost:8080/vagas/1
+Content-Type: application/json
+
+{
+  "id": 1,
+  "titulo": "Vaga Atualizada",
+  "descricao": "Nova descrição",
+  "publicacao": "2025-12-01",
+  "ativo": false,
+  "idEmpresa": 1
+}
+
+### DELETAR VAGA
+DELETE http://localhost:8080/vagas/1
